@@ -1,7 +1,10 @@
 import models.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 
 public class RegistrationTest extends TestBase{
 
@@ -29,14 +32,14 @@ public class RegistrationTest extends TestBase{
                 .withLastName("Doe")
                 .withEmail("joe" + i + "@mail.com")
                 .withPassword("sdf1234");
-
+        logger.info("registrationNegativePasswordWithoutSymbol" + " " + user.getEmail()
+                +" " + user.getPassword());
         app.getUser().openRegistrationForm();
         app.getUser().fillRegistrationForm(user);
         //app.getUser().click(By.cssSelector("label[for='password']"));//above field password
         app.getUser().pause(3000);
 
         Assert.assertTrue(app.getUser().isErrorMessage());
-        app.getUser().clickToLogo();
 
         //Password must contain minimum 8 symbols
         //Password must contain 1 uppercase letter, 1 lowercase letter, 1 number and one special symbol of [@$#^&*!]
@@ -57,7 +60,7 @@ public class RegistrationTest extends TestBase{
         app.getUser().pause(3000);
 
         Assert.assertTrue(app.getUser().isErrorMessage());
-        app.getUser().clickToLogo();
+
     }
     @Test
     public void registrationNegativePasswordWithoutLowCase(){
@@ -70,11 +73,11 @@ public class RegistrationTest extends TestBase{
 
         app.getUser().openRegistrationForm();
         app.getUser().fillRegistrationForm(user);
-        //app.getUser().click(By.cssSelector("label[for='password']"));//above field password
+        app.getUser().click(By.cssSelector("label[for='password']"));//above field password
         app.getUser().pause(3000);
 
         Assert.assertTrue(app.getUser().isErrorMessage());
-        app.getUser().clickToLogo();
+
     }
     @Test
     public void registrationNegativePasswordWithoutNumber(){
@@ -91,7 +94,7 @@ public class RegistrationTest extends TestBase{
         app.getUser().pause(3000);
 
         Assert.assertTrue(app.getUser().isErrorMessage());
-        app.getUser().clickToLogo();
+
     }
     @Test
     public void registrationNegativePasswordOnly7charts(){
@@ -108,6 +111,10 @@ public class RegistrationTest extends TestBase{
         app.getUser().pause(3000);
 
         Assert.assertTrue(app.getUser().isErrorMessage());
+
+    }
+    @AfterMethod
+    public void swichToHomePage(){
         app.getUser().clickToLogo();
     }
 

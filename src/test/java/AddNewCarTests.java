@@ -8,6 +8,8 @@ import org.testng.annotations.Test;
 public class AddNewCarTests extends TestBase {
 
     @BeforeMethod
+
+
     public void preCondition() {
         if (app.getUser().isLogged() == false) {
             app.getUser()
@@ -42,6 +44,7 @@ public class AddNewCarTests extends TestBase {
         app.getUser().pause(3000);
         app.getCar().fillCarForm(car);
         app.getCar().submitForm();
+        logger.info("Car added with \n" + car.toString());
 
     }
 
