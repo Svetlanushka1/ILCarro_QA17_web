@@ -101,4 +101,16 @@ public class HelperUser extends HelperBase{
         Actions actions = new Actions(wd);
         actions.moveByOffset(x, y).click().perform();
     }
+
+    public boolean isErrorMessage() {
+        WebDriverWait wait = new WebDriverWait(wd, 10);
+        wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector("div[class='error'] div:nth-child(1)"))));
+        return wd.findElement(By.cssSelector("div[class='error'] div:nth-child(1)")).getText().contains("Password must contain");
+
+
+    }
+
+    public void clickToLogo() {
+        click(By.xpath("//div[@class='header']//img[@alt='logo']"));
+    }
 }

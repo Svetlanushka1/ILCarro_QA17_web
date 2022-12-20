@@ -18,9 +18,9 @@ public class HelperCar extends HelperBase{
 
     public boolean isCarFormPresent(){
         return new WebDriverWait(wd, 10)
-        .until(ExpectedConditions.textToBePresentInElement(
-        wd.findElement(By.xpath("//div[@class='car-card']//h1[.' Let the car work ']"))
-        ," Let the car work "));
+                .until(ExpectedConditions.textToBePresentInElement(
+                        wd.findElement(By.xpath("//div[@class='car-card']//h1[.' Let the car work ']"))
+                        ," Let the car work "));
     }
 
     public void typeLocation(String address){

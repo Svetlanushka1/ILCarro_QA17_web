@@ -16,8 +16,8 @@ public class LoginTest extends TestBase{
     @Test
     public void loginSuccess(){
         User data = new User()
-                .withEmail("asd@fgh.com")
-                .withPassword("$Asdf1234");
+                .withEmail("haifa@gmail.com")
+                .withPassword("Haifa082022$");
 
         app.getUser().openLoginForm();
 //        app.getUser().fillLoginForm("asd@fgh.com", "$Asdf1234");
