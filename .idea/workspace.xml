@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b904332-18a6-4814-bf5c-df67dc099a6d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/MyListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/MyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/MyListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AddNewCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddNewCarTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase.java" afterDir="false" />
@@ -54,15 +57,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\QA_Auto_Projects\ILCarro_QA17_web\src\test\resources" />
@@ -115,7 +118,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTest.registrationNegativePasswordOnly7charts" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegistrationTest.registrationNegativePasswordWithoutNumber" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -128,7 +131,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;RegistrationTest.registrationNegativePasswordOnly7charts&quot;" />
+            <option value="&quot;RegistrationTest.registrationNegativePasswordWithoutNumber&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -187,10 +190,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.AddNewCarTests.addNewCarPositive" />
+        <item itemvalue="Gradle.RegistrationTest.registrationNegativePasswordWithoutNumber" />
         <item itemvalue="Gradle.RegistrationTest.registrationNegativePasswordWithoutSymbol" />
         <item itemvalue="Gradle.RegistrationTest.registrationPositiveTest" />
         <item itemvalue="Gradle.RegistrationTest" />
-        <item itemvalue="Gradle.RegistrationTest.registrationNegativePasswordOnly7charts" />
       </list>
     </recent_temporary>
   </component>
