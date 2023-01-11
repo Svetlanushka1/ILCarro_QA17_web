@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b904332-18a6-4814-bf5c-df67dc099a6d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/add.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/reg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/regression.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/smoke.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/smoketestgroup.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/MyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/MyListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AddNewCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddNewCarTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logback.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +67,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;OverrideImplement.combined&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
@@ -67,11 +76,14 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="manager" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\QA_Auto_Projects\ILCarro_QA17_web\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AddNewCarTests.addNewCarPositive">
+  <component name="RunManager" selected="Gradle.LoginTest.emailWithoutDog">
     <configuration name="AddNewCarTests.addNewCarPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -95,7 +107,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTest.emailWithoutDog" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -108,7 +120,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;RegistrationTest&quot;" />
+            <option value="&quot;LoginTest.emailWithoutDog&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -118,7 +130,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTest.registrationNegativePasswordWithoutNumber" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTest.emailWithoutDot" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -131,7 +143,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;RegistrationTest.registrationNegativePasswordWithoutNumber&quot;" />
+            <option value="&quot;LoginTest.emailWithoutDot&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -141,7 +153,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTest.registrationNegativePasswordWithoutSymbol" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTest.loginSuccess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -154,7 +166,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;RegistrationTest.registrationNegativePasswordWithoutSymbol&quot;" />
+            <option value="&quot;LoginTest.loginSuccess&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -164,7 +176,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTest.registrationPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTest.loginUnSuccess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -177,7 +189,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;RegistrationTest.registrationPositiveTest&quot;" />
+            <option value="&quot;LoginTest.loginUnSuccess&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -189,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LoginTest.emailWithoutDog" />
+        <item itemvalue="Gradle.LoginTest.emailWithoutDot" />
+        <item itemvalue="Gradle.LoginTest.loginUnSuccess" />
+        <item itemvalue="Gradle.LoginTest.loginSuccess" />
         <item itemvalue="Gradle.AddNewCarTests.addNewCarPositive" />
-        <item itemvalue="Gradle.RegistrationTest.registrationNegativePasswordWithoutNumber" />
-        <item itemvalue="Gradle.RegistrationTest.registrationNegativePasswordWithoutSymbol" />
-        <item itemvalue="Gradle.RegistrationTest.registrationPositiveTest" />
-        <item itemvalue="Gradle.RegistrationTest" />
       </list>
     </recent_temporary>
   </component>

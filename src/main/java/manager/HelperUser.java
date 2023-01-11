@@ -12,8 +12,6 @@ public class HelperUser extends HelperBase{
         super(wd);
     }
 
-
-
     public void submitLogin(){
         click(By.xpath("//button[@type='submit']"));
     }
@@ -28,6 +26,7 @@ public class HelperUser extends HelperBase{
     }
 
     public boolean isLogged(){
+
         return isElementPresent(By.xpath("//a[text()=' Logout ']"));
     }
 
@@ -79,6 +78,7 @@ public class HelperUser extends HelperBase{
 
     public void fillRegistrationForm(User user) {
         type(By.id("name"),user.getName());
+        //type(By.id("name"),null);
         type(By.id("lastName"), user.getLastName());
         type(By.id("email"), user.getEmail());
         type(By.id("password"), user.getPassword());
@@ -101,14 +101,12 @@ public class HelperUser extends HelperBase{
         Actions actions = new Actions(wd);
         actions.moveByOffset(x, y).click().perform();
     }
-
+/*
     public boolean isErrorMessage() {
         WebDriverWait wait = new WebDriverWait(wd, 10);
         wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector("div[class='error'] div:nth-child(1)"))));
         return wd.findElement(By.cssSelector("div[class='error'] div:nth-child(1)")).getText().contains("Password must contain");
-
-
-    }
+    }*/
 
     public void clickToLogo() {
         click(By.xpath("//div[@class='header']//img[@alt='logo']"));
