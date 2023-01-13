@@ -20,7 +20,7 @@ public class ApplicationManager {
     EventFiringWebDriver wd;
     HelperUser user;
     HelperCar car;
-    HelperSearch search;
+    HelperSearch search;//new field
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -35,18 +35,18 @@ public class ApplicationManager {
             wd = new EventFiringWebDriver(new FirefoxDriver());
             logger.info("Tests on FireFox started");
         }
-        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);//implicitly  wait after webDriver
         wd.register(new MyListener());
         wd.manage().window().maximize();
         wd.navigate().to("https://ilcarro.web.app/");
         user = new HelperUser(wd);
         car = new HelperCar(wd);
-        search = new HelperSearch(wd);
+        search = new HelperSearch(wd);//create the new object search
     }
 
     public HelperSearch getSearch() {
         return search;
-    }
+    }//getter of serachObject
 
     public HelperCar getCar() {
         return car;
