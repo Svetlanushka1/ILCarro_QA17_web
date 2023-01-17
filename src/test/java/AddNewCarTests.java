@@ -12,8 +12,11 @@ public class AddNewCarTests extends TestBase {
         if (app.getUser().isLogged() == false) {
             app.getUser()
                     .login(new User()
-                            .withEmail("haifa@gmail.com")
-                            .withPassword("Haifa082022$")
+                            //.withEmail("haifa@gmail.com")
+                            .withEmail(app.getEmail())
+                           // .withPassword("Haifa082022$")
+                            .withPassword(app.getPassword())
+
                     );
             app.getUser().pause(3000);
             app.getUser().clickOkButton();
@@ -27,14 +30,14 @@ public class AddNewCarTests extends TestBase {
 
         Car car = Car.builder()
                 .address("Tel Aviv")
-                .make("Toyota Camry")
+                .make("Toyota Camry2")
                 .model("Sedan")
-                .year("2022")
+                .year("2023")
                 .fuel("Hybrid")
                 .seats("4")
                 .carClass("luxury")
                 .carRegNumber("100-200" + i)
-                .price("300")
+                .price("400")
                 .build();
 
         app.getUser().pause(3000);
